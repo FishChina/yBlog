@@ -1,3 +1,11 @@
+.m-padded-mini {
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+.m-padded-tiny {
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
+}
 .m-padded-tb-mini {
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
@@ -43,6 +51,16 @@
 .m-text-lined {
     line-height: 1.8;
 }
+/*————————margin ——————————*/
+.m-margin-top-small {
+    margin-top: 0.5em !important;
+}
+.m-margin-tb-tiny {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
+/*————————opacity ——————————*/
 .m-opacity-mini {
     opacity: 0.8 !important;
 }
@@ -51,4 +69,36 @@
 
 .m-inline-block {
     display: inline-block !important;
+}
+
+/*————————position ——————————*/
+
+.m-right-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*————————container ——————————*/
+.m-container {
+    max-width: 72em !important;
+    margin: auto !important;
+}
+
+/*————————color ——————————*/
+.m-black {
+    color: #333;
+}
+
+.m-mobile-show {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px){
+    .m-mobile-hide {
+        display: none !important;
+    }
+    .m-mobile-show {
+        display: block !important;
+    }
 }

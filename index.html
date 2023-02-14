@@ -16,13 +16,13 @@
         <!-- 导航 -->
         <nav class="ui inverted attached segment m-padded-tb-mini">
             <div class="ui container">
-                <div class="ui inverted secondary menu">
+                <div class="ui inverted secondary stackable menu">
                     <h2 class="ui blue header item">Fish's Blog</h2>
-                    <a href="#" class="item"><i class="home icon"></i>首页</a>
-                    <a href="#" class="item"><i class="idea icon"></i>分类</a>
-                    <a href="#" class="item"><i class="tag icon"></i>标签</a>
-                    <a href="#" class="item"><i class="info icon"></i>关于我</a>
-                    <div class="right item">
+                    <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                    <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                    <a href="#" class="m-item item m-mobile-hide"><i class="tag icon"></i>标签</a>
+                    <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+                    <div class="right m-item item m-mobile-hide">
                         <div class="ui inverted transparent icon input">
                             <input type="text" placeholder="Search">
                             <i class="search link icon"></i>
@@ -30,12 +30,15 @@
                     </div>
                 </div>
             </div>
-
+            <a href="#" class="ui menu toggle inverted icon button m-right-top">
+                <i class="sidebar icon"></i>
+            </a>
         </nav>
         <!-- 中间内容 -->
-        <div class="m-padded-tb-large">
+        <div class="m-container m-padded-tb-large">
             <div class="ui container">
-                <div class="ui grid">
+                <div class="ui stackable grid">
+                    <!-- 左边博客列表 -->
                     <div class="eleven wide column">
                         <!-- header -->
                         <div class="ui top attached segment">
@@ -51,7 +54,71 @@
 
                         <!-- content -->
                         <div class="ui attached segment">
+                            <div class="ui padded vertical segment m-padded-tb-large">
+                                <div class="ui mobile reversed stackable grid">
+                                    <div class="eleven wide column">
+                                        <h3 class="ui header">文章标题</h3>
+                                        <p>测试文章内容</p>
+                                        <div class="ui grid">
+                                            <div class="eleven wide column">
+                                                <div class="ui horizontal link list">
+                                                    <div class="item">
+                                                        <image src="https://picsum.photos/id/22/100/100" alt="" class="ui avatar image"></image>
+                                                        <div class="content"><div class="header">Fish</div></div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="calendar icon"></i> 2023-01-01
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="eye icon"></i> 0
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="right aligned five wide column">
+                                                <a href="#" target="_blank" class="ui blue basic label m-padded-mini">测试标签</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="five wide column">
+                                        <a href="#" target="_blank">
+                                            <image src="https://picsum.photos/id/0/800/450" alt="" class="ui rounded image"></image>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="ui padded vertical segment m-padded-tb-large">
+                                <div class="ui mobile reversed stackable grid">
+                                    <div class="eleven wide column">
+                                        <h3 class="ui header">文章标题</h3>
+                                        <p>测试文章内容</p>
+                                        <div class="ui grid">
+                                            <div class="eleven wide column">
+                                                <div class="ui horizontal link list">
+                                                    <div class="item">
+                                                        <image src="https://picsum.photos/id/22/100/100" alt="" class="ui avatar image"></image>
+                                                        <div class="content"><div class="header">Fish</div></div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="calendar icon"></i> 2023-01-01
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="eye icon"></i> 0
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="right aligned five wide column">
+                                                <a href="#" target="_blank" class="ui blue basic label m-padded-mini">测试标签</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="five wide column">
+                                        <a href="#" target="_blank">
+                                            <image src="https://picsum.photos/id/0/800/450" alt="" class="ui rounded image"></image>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- footer -->
@@ -66,8 +133,66 @@
                             </div>
                         </div>
                     </div>
+                    <!-- 右边的top -->
                     <div class="five wide column">
-                        <div class="ui segment"></div>
+                        <!-- 分类 -->
+                        <div class="ui segments">
+                            <div class="ui secondary segment">
+                                <div class="ui two column grid">
+                                    <div class="column"><i class="icon idea"></i>分类</div>
+                                    <a href="#" class="right aligned column"></i>more >></a>
+                                </div>
+                            </div>
+                            <div class="ui blue segment">
+                                <div class="ui fluid vertical menu">
+                                    <a href="#" class="item">分类1
+                                        <div class="ui blue basic left pointing label">0</div>
+                                    </a>
+                                    <a href="#" class="item">分类2</a>
+                                    <a href="#" class="item">分类3</a>
+                                    <a href="#" class="item">分类4</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 标签 -->
+                        <div class="ui segments">
+                            <div class="ui secondary segment">
+                                <div class="ui two column grid">
+                                    <div class="column"><i class="icon tags"></i>标签</div>
+                                    <a href="#" class="right aligned column"></i>more >></a>
+                                </div>
+                            </div>
+                            <div class="ui blue segment">
+                                <a href="#" target="_blank" class="ui blue basic label m-padded-mini m-margin-tb-tiny">标签1
+                                    <div class="detail">0</div>
+                                </a>
+                                <a href="#" target="_blank" class="ui blue basic label m-padded-mini m-margin-tb-tiny">标签2
+                                    <div class="detail">0</div>
+                                </a>
+                                <a href="#" target="_blank" class="ui blue basic label m-padded-mini m-margin-tb-tiny">标签3
+                                    <div class="detail">0</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 最新推荐 -->
+                        <div class="ui segments m-margin-top-small">
+                            <div class="ui secondary segment">
+                                <div class="ui two column grid">
+                                    <div class="column"><i class="icon tags"></i>最新推荐</div>
+                                </div>
+                            </div>
+                            <div class="ui segment">
+                                <a href="" target="_blank" class="m-black m-text-thin">推荐1</a>
+                            </div>
+                            <div class="ui segment">
+                                <a href="" target="_blank" class="m-black">推荐2</a>
+                            </div>
+                        </div>
+                        <!-- 二维码 -->
+                        <div class="ui horizontal divider header">about me</div>
+                        <div class="ui centered card" style="width: 80px;">
+                            <image src="static/images/9778378.jpeg" alt="" class="ui rounded image" style="width: 80px;"></image>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -83,7 +208,7 @@
         <footer class="ui inverted vertical segment m-padded-tb-massive">
 
             <div class="ui center aligned container">
-                <div class="ui inverted divided grid">
+                <div class="ui inverted divided stackable grid">
                     <div class="three  wide column">
                         <div class="ui round image">
                             <img src="static/images/9778378.jpeg"  style="width: 110px">
@@ -114,6 +239,12 @@
                 <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright©2023 Fish</p>
             </div>
         </footer>
+
+        <script>
+            $('.menu.toggle').click(function () {
+                $('.m-item').toggleClass('m-mobile-hide');
+            })
+        </script>
         
     </body>
 </html>
