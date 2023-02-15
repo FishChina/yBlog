@@ -36,10 +36,156 @@
         </nav>
        
         <!-- 中间内容 -->
-        <div>
+        <div class="m-container-small m-padded-tb-big">
+            <div class="ui container">
+                <div class="ui top attached segment">
+                    <div class="eleven wide column">
+                        <div class="ui horizontal link list">
+                            <div class="item">
+                                <image src="https://picsum.photos/id/22/100/100" alt="" class="ui avatar image"></image>
+                                <div class="content"><div class="header">Fish</div></div>
+                            </div>
+                            <div class="item">
+                                <i class="calendar icon"></i> 2023-01-01
+                            </div>
+                            <div class="item">
+                                <i class="eye icon"></i> 0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui attached segment">
+                    <img src="https://picsum.photos/id/2/800/400" alt="" class="ui fluid rounded image">
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui right aligned basic segment">
+                        <div class="ui blue basic label">test</div>
+                    </div>
+                    <h2 class="ui center aligned header">
+                        文章标题
+                    </h2>
+                    <!-- 文章正文 -->
+                    <div id="content">
+                        <p>
+                            正文正文正文正文正文正文正文正文正文正文正文正文
+                        </p>
+                    </div>
+                    <!-- 标签 -->
+                    <div class="m-padded-lr">
+                        <div class="ui basic blue baisc label">方法论</div>
+                    </div>
+                    <!-- 赞赏 -->
+                    <div class="ui center aligned basic segment">
+                        <button id="displayButton" class="ui orange basic button">赞赏</button>
+                    </div>
+                    <div class="ui displayPic flowing popup transition hidden">
+                        <div class="ui orange basic label">
+                            <div class="ui images" style="font-size: inherit;">
+                                <img src="./static/images/9778378.jpeg" alt="" class="ui round bordered image" style="width: 120px">
+                                <div>图片下文字</div>
+                            </div>
+                        </div>
+                    </div>
 
+
+                </div>
+                <div class="ui attached positive message">
+                    <!-- 博客信息 -->
+                    <div class="ui middle aligned grid">
+                        <div class="eleven wide column">
+                            <li>test</li>
+                            <li>test</li>
+                            <li>test</li>
+                            <li>test</li>
+                            <li>test</li>
+                        </div>
+                        <div class="five wide column">
+                            <img src="./static/images/9778378.jpeg" alt="" class="ui right floated roundered boedered image" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+                <div class="ui attached message">
+                    <!-- 留言区域 -->
+                    <div class="ui comments">
+                        <h3 class="ui dividing header">Comments</h3>
+                        <div class="comment">
+                          <a class="avatar">
+                            <img src="./static/images/9778378.jpeg">
+                          </a>
+                          <div class="content">
+                            <a class="author">Matt</a>
+                            <div class="metadata">
+                              <span class="date">今天下午 5:42</span>
+                            </div>
+                            <div class="text">太赞了！ </div>
+                            <div class="actions">
+                              <a class="reply">Reply</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="comment">
+                          <a class="avatar">
+                            <img src="./static/images/9778378.jpeg">
+                          </a>
+                          <div class="content">
+                            <a class="author">Elliot Fu</a>
+                            <div class="metadata">
+                              <span class="date">昨天上午12:30</span>
+                            </div>
+                            <div class="text">
+                              <p>這對我的研究是非常有用.謝謝!</p>
+                            </div>
+                            <div class="actions">
+                              <a class="reply">Reply</a>
+                            </div>
+                          </div>
+                          <div class="comments">
+                            <div class="comment">
+                              <a class="avatar">
+                                <img src="./static/images/9778378.jpeg">
+                              </a>
+                              <div class="content">
+                                <a class="author">Jenny Hess</a>
+                                <div class="metadata">
+                                  <span class="date">刚刚</span>
+                                </div>
+                                <div class="text">艾略特你永远是多么正确 :) </div>
+                                <div class="actions">
+                                  <a class="reply">Reply</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="comment">
+                          <a class="avatar">
+                            <img src="./static/images/9778378.jpeg">
+                          </a>
+                          <div class="content">
+                            <a class="author">Joe Henderson</a>
+                            <div class="metadata">
+                              <span class="date">5 天以前</span>
+                            </div>
+                            <div class="text">老兄，这太棒了。非常感谢。 </div>
+                            <div class="actions">
+                              <a class="reply">Reply</a>
+                            </div>
+                          </div>
+                        </div>
+                        <form class="ui reply form">
+                          <div class="field">
+                            <textarea name="content" placeholder="Enter..."></textarea>
+                          </div>
+                          <div class="ui basic blue labeled submit icon button">
+                            <i class="icon edit"></i> Add Reply
+                          </div>
+                        </form>
+                      </div>
+                </div>
+            </div>
         </div>
 
+        <!-- 底部内容 -->
         <footer class="ui inverted vertical segment m-padded-tb-massive">
 
             <div class="ui center aligned container">
@@ -79,6 +225,11 @@
             $('.menu.toggle').click(function () {
                 $('.m-item').toggleClass('m-mobile-hide');
             })
+            $('#displayButton').popup({
+                popup : $('.displayPic.popup'),
+                on : 'click',
+                psoition : 'buttom center'
+            });
         </script>
         
     </body>
