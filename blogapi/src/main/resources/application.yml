@@ -1,0 +1,27 @@
+spring:
+  spring.thymeleaf.content-type: text/html
+  spring.thymeleaf.cache: false
+  spring.thymeleaf.mode: LEGACYHTML5
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/blog?useUnicode=true&characterEncoding=utf8mb4
+    username: root
+    password: root
+  jpa:
+#    hibernate:
+#      ddl-auto: update
+#      #???????????? hibernate_sequence ?
+#      use-new-id-generator-mappings: false
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.ydh.blogapi: debug
+  file:
+    name: log/blog.log
+server:
+  pory: 8081
+
