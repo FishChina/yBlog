@@ -1,13 +1,11 @@
-package com.star.service;
+package com.ydh.blogapi.service;
 
-import com.star.po.Comment;
+import com.ydh.blogapi.po.Comment;
 
 import java.util.List;
 
 /**
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
+
  */
 public interface CommentService {
 

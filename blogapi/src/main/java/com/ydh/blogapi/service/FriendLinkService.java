@@ -8,9 +8,9 @@
  * <author>          <time>          <version>          <desc>
  * oneStar           修改时间           版本号              描述
  */
-package com.star.service;
+package com.ydh.blogapi.service;
 
-import com.star.po.FriendLink;
+import com.ydh.blogapi.po.FriendLink;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -21,9 +21,7 @@ import java.util.List;
  * 〈一句话功能简述〉<br> 
  * 〈友链服务层接口〉
  *
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
+
  * @create 2020/3/12
  * @since 1.0.0
  */

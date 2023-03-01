@@ -1,15 +1,13 @@
-package com.star.service;
+package com.ydh.blogapi.service;
 
-import com.star.dao.UserRepository;
-import com.star.po.User;
-import com.star.util.MD5Utils;
+import com.ydh.blogapi.dao.UserRepository;
+import com.ydh.blogapi.po.User;
+import com.ydh.blogapi.util.MD5Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
+
  */
 @Service
 public class UserServiceImpl implements UserService {

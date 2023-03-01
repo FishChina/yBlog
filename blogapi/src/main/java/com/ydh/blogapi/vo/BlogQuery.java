@@ -1,9 +1,7 @@
-package com.star.vo;
+package com.ydh.blogapi.vo;
 
 /**
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
+
  */
 public class BlogQuery {
 

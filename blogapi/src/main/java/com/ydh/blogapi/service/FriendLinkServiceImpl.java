@@ -8,11 +8,11 @@
  * <author>          <time>          <version>          <desc>
  * oneStar           修改时间           版本号              描述
  */
-package com.star.service;
+package com.ydh.blogapi.service;
 
-import com.star.NotFoundException;
-import com.star.dao.FriendLinkRespository;
-import com.star.po.FriendLink;
+import com.ydh.blogapi.NotFoundException;
+import com.ydh.blogapi.dao.FriendLinkRespository;
+import com.ydh.blogapi.po.FriendLink;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -28,9 +28,7 @@ import java.util.List;
  * 〈一句话功能简述〉<br> 
  * 〈友链接口实现类〉
  *
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
+
  * @create 2020/3/12
  * @since 1.0.0
  */

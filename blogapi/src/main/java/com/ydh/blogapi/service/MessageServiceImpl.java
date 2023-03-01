@@ -8,11 +8,11 @@
  * <author>          <time>          <version>          <desc>
  * oneStar           修改时间           版本号              描述
  */
-package com.star.service;
+package com.ydh.blogapi.service;
 
 
-import com.star.dao.MessageRepository;
-import com.star.po.Message;
+import com.ydh.blogapi.dao.MessageRepository;
+import com.ydh.blogapi.po.Message;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
@@ -26,9 +26,7 @@ import java.util.List;
  * 〈一句话功能简述〉<br> 
  * 〈留言接口实现类〉
  *
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
+
  * @create 2020/3/5
  * @since 1.0.0
  */

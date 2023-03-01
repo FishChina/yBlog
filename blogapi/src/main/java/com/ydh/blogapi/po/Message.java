@@ -1,4 +1,4 @@
-package com.star.po;
+package com.ydh.blogapi.po;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -9,10 +9,7 @@ import java.util.List;
  * 〈一句话功能简述〉<br> 
  * 〈留言实体类〉
  *
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
- * @create 2020/3/5
+
  * @since 1.0.0
  */
 @Entity

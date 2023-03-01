@@ -1,4 +1,4 @@
-package com.star.util;
+package com.ydh.blogapi.util;
 
 import org.commonmark.Extension;
 import org.commonmark.ext.gfm.tables.TableBlock;
@@ -15,9 +15,7 @@ import org.commonmark.renderer.html.HtmlRenderer;
 import java.util.*;
 
 /**
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
+
  */
 public class MarkdownUtils {
 

@@ -8,7 +8,7 @@
  * <author>          <time>          <version>          <desc>
  * oneStar           修改时间           版本号              描述
  */
-package com.star.po;
+package com.ydh.blogapi.po;
 
 import javax.persistence.*;
 
@@ -16,10 +16,6 @@ import javax.persistence.*;
  * 〈一句话功能简述〉<br> 
  * 〈照片墙实体类〉
  *
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
- * @create 2020/3/19
  * @since 1.0.0
  */
 @Entity

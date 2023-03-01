@@ -1,7 +1,7 @@
-package com.star.service;
+package com.ydh.blogapi.service;
 
-import com.star.dao.CommentRepository;
-import com.star.po.Comment;
+import com.ydh.blogapi.dao.CommentRepository;
+import com.ydh.blogapi.po.Comment;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;

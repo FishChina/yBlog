@@ -1,4 +1,4 @@
-package com.star.po;
+package com.ydh.blogapi.po;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -6,9 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
+
  */
 @Entity
 @Table(name = "t_comment")

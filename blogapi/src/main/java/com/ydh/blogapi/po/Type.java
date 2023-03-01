@@ -1,4 +1,4 @@
-package com.star.po;
+package com.ydh.blogapi.po;
 
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -7,9 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
+
  */
 @Entity
 @Table(name = "t_type")

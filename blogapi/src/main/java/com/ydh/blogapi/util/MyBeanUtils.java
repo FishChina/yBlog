@@ -1,4 +1,4 @@
-package com.star.util;
+package com.ydh.blogapi.util;
 
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;
@@ -8,9 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
+
  */
 public class MyBeanUtils {
 

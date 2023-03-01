@@ -1,12 +1,10 @@
-package com.star.util;
+package com.ydh.blogapi.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
+
  */
 public class MD5Utils {
 

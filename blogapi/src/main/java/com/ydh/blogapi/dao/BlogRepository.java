@@ -1,6 +1,6 @@
-package com.star.dao;
+package com.ydh.blogapi.dao;
 
-import com.star.po.Blog;
+import com.ydh.blogapi.po.Blog;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

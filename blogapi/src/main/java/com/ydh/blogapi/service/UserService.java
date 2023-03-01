@@ -1,11 +1,9 @@
-package com.star.service;
+package com.ydh.blogapi.service;
 
-import com.star.po.User;
+import com.ydh.blogapi.po.User;
 
 /**
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
+
  */
 public interface UserService {
 
