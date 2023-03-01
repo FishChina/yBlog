@@ -38,7 +38,7 @@ public class MessageServiceImpl implements MessageService {
 
     @Override
     public List<Message> listMessage() {
-        Sort sort = new Sort(Sort.Direction.DESC,"createTime");
+        Sort sort = Sort.by(Sort.Direction.DESC,"createTime");
         List<Message> messages = messageRepository.findAllByParentMessageNull(sort);
         return eachComment(messages);
     }
@@ -49,7 +49,7 @@ public class MessageServiceImpl implements MessageService {
 
         Long parentMessageId = message.getParentMessage().getId();
         if (parentMessageId != -1) {
-            message.setParentMessage(messageRepository.findOne(parentMessageId));
+            message.setParentMessage(messageRepository.getOne(parentMessageId));
         } else {
             message.setParentMessage(null);
         }

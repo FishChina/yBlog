@@ -25,7 +25,7 @@ public class CommentServiceImpl implements CommentService {
 
     @Override
     public List<Comment> listCommentByBlogId(Long blogId) {
-        Sort sort = new Sort(Sort.Direction.DESC,"createTime");
+        Sort sort = Sort.by(Sort.Direction.DESC,"createTime");
         List<Comment> comments = commentRepository.findByBlogIdAndParentCommentNull(blogId,sort);
         return eachComment(comments);
     }
@@ -35,7 +35,7 @@ public class CommentServiceImpl implements CommentService {
     public Comment saveComment(Comment comment) {
         Long parentCommentId = comment.getParentComment().getId();
         if (parentCommentId != -1) {
-            comment.setParentComment(commentRepository.findOne(parentCommentId));
+            comment.setParentComment(commentRepository.getOne(parentCommentId));
         } else {
             comment.setParentComment(null);
         }
