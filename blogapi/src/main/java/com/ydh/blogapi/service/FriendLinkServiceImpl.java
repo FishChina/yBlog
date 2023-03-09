@@ -25,12 +25,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * 〈一句话功能简述〉<br>
- * 〈友链接口实现类〉
- *
-
- * @create 2020/3/12
- * @since 1.0.0
+ * Fish 23-03-07
  */
 @Service
 public class FriendLinkServiceImpl implements FriendLinkService {
