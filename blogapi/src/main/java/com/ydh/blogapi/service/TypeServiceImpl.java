@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
-
+ * fish typeservie impl
  */
 @Service
 public class TypeServiceImpl implements TypeService {
@@ -40,6 +40,7 @@ public class TypeServiceImpl implements TypeService {
         return typeRepository.findByName(name);
     }
 
+    //list控制器按分页执行
     @Transactional
     @Override
     public Page<Type> listType(Pageable pageable) {
